@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pyquest</title>
+  <style>
+    /* 整体布局和配色 */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #306998 50%, #FFD43B 50%); /* Python 蓝黄渐变 */
+      color: #333;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* 顶部导航栏 */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    /* Logo 区域 */
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    /* 网站名称 */
+    .site-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+      pointer-events: none;
+    }
+
+    /* 用户信息区 */
+    .user-info {
+      display: flex;
+      align-items: center;
+    }
+    .user-info img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      border: 2px solid #fff;
+    }
+    .user-info .info-text {
+      font-size: 0.9rem;
+      color: #fff;
+    }
+
+    /* 主体内容 */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    main h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .links a {
+      text-decoration: none;
+      background: rgba(255,255,255,0.8);
+      padding: 12px 20px;
+      border-radius: 5px;
+      color: #306998;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .links a:hover {
+      background: rgba(255,255,255,1);
+    }
+    .links a span {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: normal;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 顶部区域：Logo 与 用户信息 -->
+  <header>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="path/to/your-logo.png" alt="Pyquest Logo" />
+    </div>
+
+    <!-- 网站名称（视觉中心，绝对定位）-->
+    <div class="site-title">Pyquest</div>
+
+    <!-- 用户信息 -->
+    <div class="user-info">
+      <img src="path/to/user-avatar.jpg" alt="User Avatar" />
+      <div class="info-text">Hello, User!</div>
+    </div>
+  </header>
+
+  <!-- 主体内容 -->
+  <main>
+    <h1>Welcome to Pyquest!</h1>
+    <div class="links">
+      <a href="/intro-python.html">
+        Introduction to Python
+        <span>Get started with the basics of Python programming.</span>
+      </a>
+      <a href="/interactive-exercises.html">
+        Interactive Exercises
+        <span>Practice your skills with hands-on coding challenges.</span>
+      </a>
+      <a href="/community-forum.html">
+        Community Forum
+        <span>Join discussions and ask questions to fellow learners.</span>
+      </a>
+    </div>
+  </main>
+
+</body>
+</html>
